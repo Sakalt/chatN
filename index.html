@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- プロフィール編集フォーム -->
+    <section id="profile-form">
+        <h2>Edit Profile</h2>
+        <input type="text" id="profile-username" placeholder="Username">
+        <input type="email" id="profile-email" placeholder="Email">
+        <input type="text" id="profile-bio" placeholder="Bio">
+        <input type="file" id="profile-image" accept="image/*">
+        <button id="update-profile-button">Update Profile</button>
+    </section>
+
+    <!-- 投稿フォーム -->
+    <section id="post-form">
+        <h2>Create Post</h2>
+        <input type="text" id="post-title" placeholder="Title">
+        <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+        <input type="file" id="post-image" accept="image/*">
+        <input type="url" id="post-link" placeholder="URL">
+        <input type="text" id="post-tags" placeholder="Tags (comma separated)">
+        <button id="post-button">Post</button>
+    </section>
+
+    <!-- 利用規約 -->
+    <section id="terms">
+        <h2>Terms of Service</h2>
+        <p>...（利用規約の内容）...</p>
+        <input type="checkbox" id="accept-terms"> I accept the terms of service
+        <button id="accept-terms-button">Accept</button>
+    </section>
+
+    <!-- メッセージ返信フォーム -->
+    <section id="reply-form">
+        <h2>Reply</h2>
+        <textarea id="reply-content" placeholder="Your reply..."></textarea>
+        <button id="send-reply-button">Send Reply</button>
+    </section>
+
+    <!-- 検索フォーム -->
+    <section id="search-form">
+        <input type="text" id="search-query" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </section>
+
+    <!-- 投稿一覧 -->
+    <section id="feed">
+        <h2>Feed</h2>
+        <!-- 投稿がここに表示されます -->
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
