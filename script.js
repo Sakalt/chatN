@@ -84,3 +84,16 @@ document.getElementById('search-button').addEventListener('click', function() {
         .then(response => response.json())
         .then(data => console.log(data));
 });
+
+// ページ読み込み時に保存されたデータをフォームにセット
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('profile-username')) {
+        document.getElementById('profile-username').value = localStorage.getItem('profile-username');
+    }
+    // 他のフィールドも同様に設定
+});
+
+// フォームの入力をローカルストレージに保存
+document.getElementById('profile-username').addEventListener('input', (event) => {
+    localStorage.setItem('profile-username', event.target.value);
+});
