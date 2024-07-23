@@ -37,9 +37,9 @@ document.getElementById('post-button').addEventListener('click', function() {
               newPost.innerHTML = `
                   <h3>${title}</h3>
                   <p>${content}</p>
-                  ${image ? `<img src="${URL.createObjectURL(image)}" alt="Post Image">` : ''}
+                  ${image ? `<img src="${URL.createObjectURL(image)}" alt="投稿画像">` : ''}
                   ${link ? `<a href="${link}" target="_blank">${link}</a>` : ''}
-                  ${tags.length > 0 ? `<p>Tags: ${tags.join(', ')}</p>` : ''}
+                  ${tags.length > 0 ? `<p>タグ: ${tags.join(', ')}</p>` : ''}
               `;
               postSection.appendChild(newPost);
           });
@@ -58,7 +58,7 @@ document.getElementById('accept-terms-button').addEventListener('click', functio
         }).then(response => response.json())
           .then(data => console.log(data));
     } else {
-        alert('You must accept the terms to continue.');
+        alert('利用規約に同意する必要があります。');
     }
 });
 
