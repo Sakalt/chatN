@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNS Site</title>
+    <title>chatN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- プロフィール編集フォーム -->
     <section id="profile-form">
-        <h2>Edit Profile</h2>
-        <input type="text" id="profile-username" placeholder="Username">
-        <input type="email" id="profile-email" placeholder="Email">
-        <input type="text" id="profile-bio" placeholder="Bio">
+        <h2>プロフィール編集</h2>
+        <input type="text" id="profile-username" placeholder="ユーザー名">
+        <input type="email" id="profile-email" placeholder="メールアドレス">
+        <input type="text" id="profile-bio" placeholder="自己紹介">
         <input type="file" id="profile-image" accept="image/*">
-        <button id="update-profile-button">Update Profile</button>
+        <button id="update-profile-button">プロフィールを更新</button>
     </section>
 
     <!-- 投稿フォーム -->
     <section id="post-form">
-        <h2>Create Post</h2>
-        <input type="text" id="post-title" placeholder="Title">
-        <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+        <h2>投稿作成</h2>
+        <input type="text" id="post-title" placeholder="タイトル">
+        <textarea id="post-content" placeholder="内容を入力"></textarea>
         <input type="file" id="post-image" accept="image/*">
-        <input type="url" id="post-link" placeholder="URL">
-        <input type="text" id="post-tags" placeholder="Tags (comma separated)">
-        <button id="post-button">Post</button>
+        <input type="url" id="post-link" placeholder="リンク (URL)">
+        <input type="text" id="post-tags" placeholder="タグ (カンマ区切り)">
+        <button id="post-button">投稿する</button>
     </section>
 
     <!-- 利用規約 -->
     <section id="terms">
-        <h2>Terms of Service</h2>
+        <h2>利用規約</h2>
         <p>...（利用規約の内容）...</p>
-        <input type="checkbox" id="accept-terms"> I accept the terms of service
-        <button id="accept-terms-button">Accept</button>
+        <input type="checkbox" id="accept-terms"> 利用規約に同意する
+        <button id="accept-terms-button">同意する</button>
     </section>
 
     <!-- メッセージ返信フォーム -->
     <section id="reply-form">
-        <h2>Reply</h2>
-        <textarea id="reply-content" placeholder="Your reply..."></textarea>
-        <button id="send-reply-button">Send Reply</button>
+        <h2>メッセージ返信</h2>
+        <textarea id="reply-content" placeholder="返信内容を入力"></textarea>
+        <button id="send-reply-button">返信を送信</button>
     </section>
 
     <!-- 検索フォーム -->
     <section id="search-form">
-        <input type="text" id="search-query" placeholder="Search...">
-        <button id="search-button">Search</button>
+        <input type="text" id="search-query" placeholder="検索...">
+        <button id="search-button">検索</button>
     </section>
 
     <!-- 投稿一覧 -->
     <section id="feed">
-        <h2>Feed</h2>
+        <h2>フィード</h2>
         <!-- 投稿がここに表示されます -->
     </section>
 
